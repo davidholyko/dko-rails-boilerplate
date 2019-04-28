@@ -1,3 +1,4 @@
+# Rails and Heroku Boilerplate mini-guide
 
 ## Preparation
 
@@ -7,6 +8,13 @@
    respectively.
 1. Setup your database with `bin/rails [db:drop] db:create db:migrate db:seed`.
 1. Run the API server with `bin/rails server`.
+
+## .env file
+
+```
+SECRET_KEY_BASE_DEVELOPMENT={ENTER YOUR KEY HERE}
+SECRET_KEY_BASE_TEST={ENTER YOUR OTHER KEY HERE}
+```
 
 ## Commands
 
@@ -40,6 +48,11 @@ bin/rails g scaffold {my_resource} field0:string field1:string field2:integer
 // adds relationship between tables
 bin/rails g migration AddUserToResources user:references
 ```
+
+### Debugging Rails
+
+- Do the action
+- Check terminal that has Rails server running
 
 ### Create a New Heroku App
 
